@@ -8,14 +8,15 @@
 
 # If we're being sourced by the common script that we called,
 # stop right here. No need to go down the rabbit hole.
+
 if [ "${BASH_SOURCE[0]}" != "${0}" ]; then
     return
-    fi
+fi
 
-    set -e
+set -e
 
-    export DEVICE=m14x
-    export DEVICE_COMMON=universal8535-common
-    export VENDOR=samsung
+export DEVICE=a14x
+export DEVICE_COMMON=universal8535-common
+export VENDOR=samsung
 
-    "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
+"./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"

@@ -7,7 +7,7 @@
 
 set -e
 
-export DEVICE=m14x
+export DEVICE=a14x
 export DEVICE_COMMON=universal8535-common
 export VENDOR=samsung
 
