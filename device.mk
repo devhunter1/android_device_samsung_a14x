@@ -28,6 +28,15 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/firmware/nt36672_a14x_tianma_mp.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/nt36672_a14x_tianma_mp.bin \
     $(DEVICE_PATH)/vendor/firmware/td4160_a13x_boe.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/td4160_a13x_boe.bin
     
+# Copy kernel firmare to recovery
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/vendor/firmware/ili7807_a14x.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/ili7807_a14x.bin \
+    $(DEVICE_PATH)/vendor/firmware/nt36672_a14x_2ndbr_tianma.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/nt36672_a14x_2ndbr_tianma.bin \
+    $(DEVICE_PATH)/vendor/firmware/nt36672_a14x_2ndbr_tianma_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/nt36672_a14x_2ndbr_tianma_mp.bin \
+    $(DEVICE_PATH)/vendor/firmware/nt36672_a14x_tianma.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/nt36672_a14x_tianma.bin \
+    $(DEVICE_PATH)/vendor/firmware/nt36672_a14x_tianma_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/nt36672_a14x_tianma_mp.bin \
+    $(DEVICE_PATH)/vendor/firmware/td4160_a13x_boe.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/td4160_a13x_boe.bin
+    
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlay_a14x
