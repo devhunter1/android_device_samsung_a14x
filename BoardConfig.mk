@@ -22,8 +22,6 @@ TARGET_SCREEN_DENSITY := 450
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/a14x_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/s5e8535
-BOARD_DTB_CFG := $(DEVICE_PATH)/configs/kernel/s5e8535.cfg
-BOARD_DTBO_CFG := $(DEVICE_PATH)/configs/kernel/a14x.cfg
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
