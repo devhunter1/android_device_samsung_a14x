@@ -39,6 +39,3 @@ RECOVERY_KERNEL_MODULES := $(BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD)
 
 # Inherit from the common tree
 include device/samsung/universal8535-common/BoardConfigCommon.mk
-
-# Inherit optional vendor BoardConfig
-include vendor/samsung/universal8535/BoardConfigVendor.mk

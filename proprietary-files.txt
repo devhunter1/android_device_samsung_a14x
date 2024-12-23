@@ -1,0 +1,14 @@
+# Firmware
+vendor/firmware/abov/a96t396_a14x_main.bin
+vendor/firmware/abov/a96t396_a14x_sub.bin
+vendor/firmware/APMS_AUDIO_SLSI.bin
+vendor/firmware/aw882xx_pid_2055a_acf.bin
+vendor/firmware/aw882xx_pid_2055b_acf.bin
+vendor/firmware/ili7807_a14x.bin
+vendor/firmware/nt36672_a14x_2ndbr_tianma.bin
+vendor/firmware/nt36672_a14x_2ndbr_tianma_mp.bin
+vendor/firmware/nt36672_a14x_tianma.bin
+vendor/firmware/nt36672_a14x_tianma_mp.bin
+vendor/firmware/td4160_a13x_boe.bin
+vendor/firmware/spkamp_aw882xx.bin
+vendor/firmware/spkamp_param_aw882xx.bin
