@@ -1,3 +1,5 @@
+# All unpinned blobs are extracted from A146BXXS3CXC2
+
 # Firmware
 vendor/firmware/abov/a96t396_a14x_main.bin
 vendor/firmware/abov/a96t396_a14x_sub.bin
