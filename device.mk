@@ -38,5 +38,4 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/firmware/td4160_a13x_boe.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/td4160_a13x_boe.bin
     
 # Overlays
-PRODUCT_PACKAGES += \
-    FrameworksResOverlay_a14x
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
