@@ -1,0 +1,5 @@
+## RIL
+ro.carrier=unknown
+ro.radio.noril=no
+vendor.rild.libpath=/vendor/lib64/libsec-ril.so
+vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
