@@ -44,4 +44,4 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 include device/samsung/universal8535-common/BoardConfigCommon.mk
 
 # Inherit from the a14x vendor
-include vendor/samsung/a14x/a14x-vendor.mk
+include vendor/samsung/a14x/BoardConfigVendor.mk

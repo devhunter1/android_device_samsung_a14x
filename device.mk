@@ -41,3 +41,6 @@ PRODUCT_COPY_FILES += \
     
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
+
+# Inherit from the a14x vendor
+include vendor/samsung/a14x/a14x-vendor.mk
