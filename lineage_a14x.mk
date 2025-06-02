@@ -24,16 +24,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+## Boot Animation
+TARGET_SCREEN_HEIGHT := 2408
+TARGET_SCREEN_WIDTH := 1080
+
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_a14x
 PRODUCT_DEVICE := a14x
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A146B
 PRODUCT_MANUFACTURER := samsung
-
-## Boot Animation
-TARGET_SCREEN_HEIGHT := 2408
-TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
