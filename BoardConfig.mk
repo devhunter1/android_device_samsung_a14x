@@ -29,7 +29,10 @@ BOARD_NAME := SRPVG28A003
 TARGET_SCREEN_DENSITY := 450
 
 # Kernel
-TARGET_KERNEL_CONFIG := a14x_defconfig
+TARGET_KERNEL_CONFIG += \
+    a14x_defconfig \
+    permissive.config
+
 TARGET_KERNEL_SOURCE := kernel/samsung/s5e8535
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
