@@ -25,17 +25,12 @@ include vendor/samsung/a14x/BoardConfigVendor.mk
 # Board
 BOARD_NAME := SRPVG28A003
 
-# Display
-TARGET_SCREEN_DENSITY := 450
-
 # Kernel
 TARGET_KERNEL_CONFIG += \
     a14x_defconfig \
     permissive.config
 
 TARGET_KERNEL_SOURCE := kernel/samsung/s5e8535
-BOARD_KERNEL_SEPARATED_DTBO := true
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 # Kernel modules
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
