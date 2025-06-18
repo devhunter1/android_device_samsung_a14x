@@ -44,3 +44,7 @@ PRODUCT_COPY_FILES += \
     
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/lineage/compat
