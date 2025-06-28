@@ -19,8 +19,8 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'vendor/samsung/universal8535-common',
-    'device/samsung/universal8535-common',
+    'vendor/samsung/s5e8535-common',
+    'device/samsung/s5e8535-common',
     'hardware/samsung',
 ]
 
@@ -77,6 +77,6 @@ module = ExtractUtilsModule(
 
 if __name__ == '__main__':
     utils = ExtractUtils.device_with_common(
-        module, 'universal8535-common', module.vendor
+        module, 's5e8535-common', module.vendor
     )
     utils.run()
