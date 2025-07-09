@@ -16,6 +16,7 @@ phy-exynos-mipi-dsim.ko
 phy-exynos-mipi.ko
 phy-exynos-usbdrd-super.ko
 pinctrl-samsung-core.ko
+s2mpu15_pinctrl_8535.ko
 pwm-samsung.ko
 pl330.ko
 samsung-dma.ko
@@ -120,6 +121,7 @@ dwc3-exynos-usb.ko
 xhci-exynos.ko
 usblp.ko
 cdc-wdm.ko
+lvstest.ko
 usb_f_dm.ko
 usb_f_dm1.ko
 usb_f_conn_gadget.ko
@@ -213,7 +215,6 @@ exynos_devfreq.ko
 s2mpu15_adc_8535.ko
 sec_pm_debug.ko
 sec_reboot.ko
-sec_crash_key.ko
 sec_crash_key_user.ko
 sec_hard_reset_hook.ko
 sec_key_notifier.ko
@@ -291,6 +292,4 @@ snd-soc-samsung-abox-sync.ko
 exynos8535_rt5691.ko
 sec_audio_sysfs.ko
 sec_audio_debug.ko
-tcp_westwood.ko
-tcp_htcp.ko
 cfg80211.ko
