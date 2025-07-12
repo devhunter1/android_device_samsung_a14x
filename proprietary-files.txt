@@ -73,8 +73,6 @@ vendor/lib/vndk/libtinyalsa.so:vendor/lib/libtinyalsa_vendor.so;FIX_SONAME
 vendor/lib64/hw/camera.s5e8535.so
 
 ## Camera Dependencies
-vendor/lib/libexynosv4l2.so
-vendor/lib64/libexynosv4l2.so
 vendor/lib/libexynosutils.so
 vendor/lib64/libexynosutils.so
 vendor/lib/libion_exynos.so
@@ -105,30 +103,32 @@ vendor/lib/libsecnativefeature.so
 vendor/lib64/libsecnativefeature.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 vendor/lib64/libsec2lsi_conversion.so
-
-# Codec2
-vendor/bin/hw/samsung.hardware.media.c2@1.2-service
-vendor/etc/init/samsung.hardware.media.c2@1.2-service.rc
-vendor/lib/libExynosC2ComponentStore.so
-vendor/lib64/libExynosC2ComponentStore.so
-vendor/lib/libexynosgraphicbuffer.so
-vendor/lib64/libexynosgraphicbuffer.so
 vendor/lib/libepicoperator.so
 vendor/lib64/libepicoperator.so
 vendor/lib/vendor.samsung_slsi.hardware.epic@1.0.so
 vendor/lib64/vendor.samsung_slsi.hardware.epic@1.0.so
-vendor/lib/libExynosC2H264Dec.so
-vendor/lib64/libExynosC2H264Dec.so
-vendor/lib/libExynosC2H264Enc.so
-vendor/lib64/libExynosC2H264Enc.so
-vendor/lib/libExynosC2HevcDec.so
-vendor/lib64/libExynosC2HevcDec.so
-vendor/lib/libExynosC2HevcEnc.so
-vendor/lib64/libExynosC2HevcEnc.so
-vendor/lib/libExynosC2Vp8Dec.so
-vendor/lib64/libExynosC2Vp8Dec.so
-vendor/lib/libExynosC2Vp8Enc.so
-vendor/lib64/libExynosC2Vp8Enc.so
+
+## Codec2 - from gta4xlswifi - lineage-22.2-20250416-UNOFFICIAL-gta4xlswifi.zip
+vendor/bin/hw/samsung.hardware.media.c2@1.2-service|c488569c74c48bfeffbe01228ee471339f0f476c
+vendor/etc/init/samsung.hardware.media.c2@1.2-service.rc|dea0e367ff25b270444979bf3a4076c5961cfa12
+vendor/lib/libExynosC2ComponentStore.so|564d721e4f20b2cdbaad147440cb92336643b5bb
+vendor/lib64/libExynosC2ComponentStore.so|9955bb77b98f7507b90cd53353feb13236e60f76
+vendor/lib/libexynosgraphicbuffer.so|b5c8ba65d53cdc60e69528f70a8775e8802b60e4
+vendor/lib64/libexynosgraphicbuffer.so|e3e055b5231e347e0fdf6e4c81d6d17111f828e1
+vendor/lib/libExynosC2H264Dec.so|733fb1ac500c1b11bc6b33f9cb5dae2b6ebedc92
+vendor/lib64/libExynosC2H264Dec.so|1b0122ae2df442bbf8610c6a491a8e35385b0354
+vendor/lib/libExynosC2H264Enc.so|a02bef90948d6cea8a3859a4927cc93925ad6f54
+vendor/lib64/libExynosC2H264Enc.so|9708bfcae531d18e34f61a3c959e6bb9f2b5f4af
+vendor/lib/libExynosC2HevcDec.so|f08d4731e02765420d6030462fd7d57d9a7451b2
+vendor/lib64/libExynosC2HevcDec.so|bd1d7ef0bd528464268e692f57a245134300b012
+vendor/lib/libExynosC2HevcEnc.so|3ba052feadb785a5f8f093012e6a7aff0d246c34
+vendor/lib64/libExynosC2HevcEnc.so|4a65861474dcc6f5aaa31145442323e0a281baa0
+vendor/lib/libExynosC2Vp8Dec.so|c48f4e0d22792611bcac8a65ec30a8ca1306bc8b
+vendor/lib64/libExynosC2Vp8Dec.so|a117a5e93262c0eb04397f67781ab2be6a4aa9b4
+vendor/lib/libExynosC2Vp8Enc.so|fd15a280294b783b2035b7ce0efaa8fbe5e4647d
+vendor/lib64/libExynosC2Vp8Enc.so|48b157e523de4cea15b955df8157bde4d2175965
+vendor/lib/libexynosv4l2.so|47e7773618cad3222edb0613057a0a64c5c36760
+vendor/lib64/libexynosv4l2.so|4e99334697198df90a707d4d6def6b6094180284
 
 # Firmware
 vendor/firmware/APDV_AUDIO_SLSI.bin

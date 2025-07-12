@@ -44,11 +44,6 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('android.hardware.security.rkp-V3-ndk.so')
         .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
    (
-       'vendor/lib/libexynosgraphicbuffer.so',
-       'vendor/lib64/libexynosgraphicbuffer.so',
-   ): blob_fixup()
-        .replace_needed('libui.so', 'libui_shim.so'),
-   (
        'vendor/lib64/libaboxpcmdump.so',
        'vendor/lib/libaboxpcmdump.so',
        'vendor/lib64/libaudioparamupdate.so',
