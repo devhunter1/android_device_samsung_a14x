@@ -26,9 +26,7 @@ include vendor/samsung/a14x/BoardConfigVendor.mk
 BOARD_NAME := SRPVG28A003
 
 # Kernel
-TARGET_KERNEL_CONFIG += \
-    a14x_defconfig \
-    permissive.config
+TARGET_KERNEL_CONFIG := a14x_defconfig
 
 TARGET_KERNEL_SOURCE := kernel/samsung/s5e8535
 
