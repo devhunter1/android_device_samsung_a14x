@@ -35,8 +35,6 @@ vendor/lib/libaudioparamupdate.so
 vendor/lib64/libaudioparamupdate.so
 vendor/lib/libaudio-ril.so
 vendor/lib64/libaudio-ril.so
-vendor/etc/mixer_gains.xml
-vendor/etc/mixer_paths.xml
 vendor/etc/SoundBoosterParam.txt
 
 # Audio (FX modules)

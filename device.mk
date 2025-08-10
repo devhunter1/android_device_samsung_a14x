@@ -24,6 +24,11 @@ $(call inherit-product, device/samsung/s5e8535-common/common.mk)
 # Inherit from the a14x vendor
 $(call inherit-product, vendor/samsung/a14x/a14x-vendor.mk)
 
+# Audio
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
+    $(DEVICE_PATH)/configs/audio/mixer_gains.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_gains.xml
+
 # Copy kernel firmare to recovery
 PRODUCT_COPY_FILES += \
     $(VENDOR_PATH)/proprietary/vendor/firmware/ili7807_a14x.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/ili7807_a14x.bin \
