@@ -173,9 +173,9 @@ vendor/lib/libwrappergps.so
 vendor/lib64/libwrappergps.so
 
 # HWC
-vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1;SYMLINK=vendor/lib/hw/vulkan.universal8535.so
+vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1
 vendor/lib/hw/vulkan.mali.so
-vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/libOpenCL.so;SYMLINK=vendor/lib64/libOpenCL.so.1;SYMLINK=vendor/lib64/libOpenCL.so.1.1;SYMLINK=vendor/lib64/hw/vulkan.universal8535.so
+vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/libOpenCL.so;SYMLINK=vendor/lib64/libOpenCL.so.1;SYMLINK=vendor/lib64/libOpenCL.so.1.1
 vendor/lib64/hw/vulkan.mali.so
 vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl.so
 vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl.so
