@@ -1,0 +1,11 @@
+//
+// Copyright (C) The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+soong_namespace {
+    imports: [
+        "device/samsung/s5e8535-common",
+    ],
+}
