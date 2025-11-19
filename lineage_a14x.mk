@@ -38,7 +38,7 @@ PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="a14xxx-user 14 UP1A.231005.007 A146BXXS9DYH1 release-keys" \
-    BuildFingerprint=samsung/a14xxx/essi:14/UP1A.231005.007/A146BXXS9DYH1:user/release-keys \
+    BuildDesc="a14xxx-user 15 AP3A.240905.015.A2 A146BXXUADYJ2 release-keys" \
+    BuildFingerprint=samsung/a14xxx/essi:15/AP3A.240905.015.A2/A146BXXUADYJ2:user/release-keys \
     DeviceProduct=a14xxx \
     SystemName=a14xxx
