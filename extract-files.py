@@ -46,28 +46,10 @@ blob_fixups: blob_fixups_user_type = {
    ): blob_fixup()
         .add_needed('android.hardware.security.rkp-V3-ndk.so')
         .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
-   (
-       'vendor/lib64/libaboxpcmdump.so',
-       'vendor/lib/libaboxpcmdump.so',
-       'vendor/lib64/libaudioparamupdate.so',
-       'vendor/lib/libaudioparamupdate.so',
-   ): blob_fixup()
-        .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so'),
     'vendor/lib64/libsensorlistener.so': blob_fixup()
         .add_needed('libshim_sensorndkbridge.so'),
     'vendor/lib64/hw/camera.s5e8535.so': blob_fixup()
         .add_needed('libui_shim.so'),
-   (
-       'vendor/lib/libaudioproxy2.so',
-       'vendor/lib64/libaudioproxy2.so',
-   ): blob_fixup()
-        .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so')
-        .replace_needed('libtinyalsa.so', 'libtinyalsa_vendor.so'),
-   (
-       'vendor/lib64/hw/audio.primary.s5e8535.so',
-       'vendor/lib/hw/audio.primary.s5e8535.so',
-   ): blob_fixup()
-        .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so'),
     'vendor/lib64/libsec-ril.so': blob_fixup()
         .sig_replace('80 0E 40 F9 E1 03 16 AA 82 0C 80 52 E3 03 15 AA',
                      '80 0E 40 F9 E1 03 16 AA 82 0C 80 52 03 00 80 D2'),
