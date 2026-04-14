@@ -3623,7 +3623,7 @@
 
     <!-- Voice Recording paths -->
     <path name="recording-mic">
-        <path name="media-mic" />
+        <path name="media-dualmic" />
     </path>
 
     <path name="recording-2nd-mic">
@@ -3673,7 +3673,7 @@
 
     <!-- Camcording paths -->
     <path name="camcorder-mic">
-        <path name="media-mic" />
+        <path name="media-dualmic" />
     </path>
 
     <path name="camcorder-2nd-mic">
@@ -3719,7 +3719,7 @@
 
     <!-- Recognition Input paths -->
     <path name="recognition-mic">
-        <path name="media-mic" />
+        <path name="media-dualmic" />
     </path>
 
     <path name="recognition-2nd-mic">
@@ -6136,8 +6136,9 @@
     <!-- Input stage volume -->
     <!-- media input volume -->
     <path name="gain-media-mic">
-        <ctl name="IN2 Boost Volume" value="16" />
-        <ctl name="STO1 ADC Capture Volume" value="47 47" />
+        <ctl name="IN2 Boost Volume" value="35" />
+        <ctl name="IN3 Boost Volume" value="35" />
+        <ctl name="STO1 ADC Capture Volume" value="65 65" />
     </path>
 
     <path name="gain-media-2nd-mic">
