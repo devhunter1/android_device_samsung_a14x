@@ -7219,9 +7219,9 @@
     <!-- CP Call Input volume -->
     <!-- NB volume -->
     <path name="gain-incall_nb-handset-mic">
-        <ctl name="IN2 Boost Volume" value="16" />
-        <ctl name="IN3 Boost Volume" value="16" />
-        <ctl name="STO1 ADC Capture Volume" value="47 47" />
+        <ctl name="IN2 Boost Volume" value="35" />
+        <ctl name="IN3 Boost Volume" value="35" />
+        <ctl name="STO1 ADC Capture Volume" value="65 65" />
     </path>
 
     <path name="gain-incall_nb-speaker-mic">
