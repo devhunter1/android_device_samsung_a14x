@@ -19,3 +19,5 @@ DEVICE_PATH := device/samsung/a14x
 # Inherit from the common tree
 $(call inherit-product, device/samsung/s5e8535-common/common.mk)
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
