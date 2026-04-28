@@ -21,3 +21,6 @@ include device/samsung/s5e8535-common/BoardConfigCommon.mk
 
 # Board
 BOARD_NAME := SRPVG28A003
+
+# Kernel
+TARGET_KERNEL_CONFIG := a14x_defconfig
