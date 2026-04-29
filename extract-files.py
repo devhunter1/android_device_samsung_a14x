@@ -20,6 +20,7 @@ from extract_utils.main import (
 namespace_imports = [
     'device/samsung/s5e8535-common',
     'vendor/samsung/s5e8535-common',
+    'hardware/lineage/compat',
 ]
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
@@ -29,6 +30,8 @@ lib_fixups: lib_fixups_user_type = {
 } # fmt: skip
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/lib64/hw/camera.s5e8535.so': blob_fixup()
+        .add_needed('libui_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
