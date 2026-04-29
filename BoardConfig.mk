@@ -19,6 +19,9 @@ DEVICE_PATH := device/samsung/a14x
 # Inherit from the common tree
 include device/samsung/s5e8535-common/BoardConfigCommon.mk
 
+# Inherit from the a14x vendor
+include vendor/samsung/a14x/BoardConfigVendor.mk
+
 # Board
 BOARD_NAME := SRPVG28A003
 
