@@ -16,11 +16,30 @@
 
 DEVICE_PATH := device/samsung/a14x
 
+VENDOR_PATH := vendor/samsung/a14x
+
 # Inherit from the a14x vendor
 $(call inherit-product, vendor/samsung/a14x/a14x-vendor.mk)
 
 # Inherit from the common tree
 $(call inherit-product, device/samsung/s5e8535-common/common.mk)
+
+# kernel firmares
+PRODUCT_COPY_FILES += \
+    $(VENDOR_PATH)/proprietary/vendor/firmware/ili7807_a14x.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/ili7807_a14x.bin \
+    $(VENDOR_PATH)/proprietary/vendor/firmware/nt36672_a14x_2ndbr_tianma.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/nt36672_a14x_2ndbr_tianma.bin \
+    $(VENDOR_PATH)/proprietary/vendor/firmware/nt36672_a14x_2ndbr_tianma_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/nt36672_a14x_2ndbr_tianma_mp.bin \
+    $(VENDOR_PATH)/proprietary/vendor/firmware/nt36672_a14x_tianma.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/nt36672_a14x_tianma.bin \
+    $(VENDOR_PATH)/proprietary/vendor/firmware/nt36672_a14x_tianma_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/nt36672_a14x_tianma_mp.bin \
+    $(VENDOR_PATH)/proprietary/vendor/firmware/td4160_a13x_boe.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/td4160_a13x_boe.bin
+
+PRODUCT_COPY_FILES += \
+    $(VENDOR_PATH)/proprietary/vendor/firmware/ili7807_a14x.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/ili7807_a14x.bin \
+    $(VENDOR_PATH)/proprietary/vendor/firmware/nt36672_a14x_2ndbr_tianma.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/nt36672_a14x_2ndbr_tianma.bin \
+    $(VENDOR_PATH)/proprietary/vendor/firmware/nt36672_a14x_2ndbr_tianma_mp.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/nt36672_a14x_2ndbr_tianma_mp.bin \
+    $(VENDOR_PATH)/proprietary/vendor/firmware/nt36672_a14x_tianma.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/nt36672_a14x_tianma.bin \
+    $(VENDOR_PATH)/proprietary/vendor/firmware/nt36672_a14x_tianma_mp.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/nt36672_a14x_tianma_mp.bin \
+    $(VENDOR_PATH)/proprietary/vendor/firmware/td4160_a13x_boe.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/td4160_a13x_boe.bin
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
