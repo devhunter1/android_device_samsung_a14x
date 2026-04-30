@@ -63,8 +63,6 @@ vendor/etc/floating_feature.xml
 # GPS
 vendor/bin/hw/gpsd
 vendor/etc/init/init.gps.rc
-vendor/lib/libwrappergps.so
-vendor/lib64/libwrappergps.so
 vendor/etc/gnss/ca.pem
 vendor/etc/gnss/deleteLogCommands
 vendor/etc/gnss/gps.cfg
