@@ -34,6 +34,8 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/hw/camera.s5e8535.so': blob_fixup()
         .add_needed('libui_shim.so'),
+    'vendor/lib64/libsensorlistener.so': blob_fixup()
+        .add_needed('libsensorndkbridge_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
