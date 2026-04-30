@@ -1,7 +1,7 @@
 # All unpinned blobs are extracted from A146BXXUBDYL1
 
 # Camera
-vendor/lib64/hw/camera.s5e8535.so
+vendor/lib64/hw/camera.s5e8535.so;DUMMY_SHARED_LIB
 
 ## Camera Dependencies
 vendor/lib64/libIRTA.so
