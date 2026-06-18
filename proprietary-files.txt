@@ -1,5 +1,9 @@
 # All unpinned blobs are extracted from A146BXXSDDZE1
 
+# Audio (Dolby)
+vendor/lib/soundfx/libswdap.so
+vendor/lib64/soundfx/libswdap.so
+
 # Camera
 vendor/lib64/hw/camera.s5e8535.so
 
