@@ -1,7 +1,6 @@
 # All unpinned blobs are extracted from A146BXXSDDZE1
 
 # Audio (Dolby)
-vendor/lib/soundfx/libswdap.so
 vendor/lib64/soundfx/libswdap.so
 
 # Camera
@@ -10,18 +9,14 @@ vendor/lib64/hw/camera.s5e8535.so
 ## Camera Dependencies
 vendor/lib64/libIRTA.so
 vendor/lib64/libvpl.so
-vendor/lib/libvra.so
 vendor/lib64/libvra.so
 vendor/lib64/libremosaic_wrapper.so
 vendor/lib64/libremosaiclib.so
 vendor/lib64/libdlrmsc.so
 vendor/lib64/libomp.so
 vendor/lib64/libuniapi.so
-vendor/lib/libuniplugin.so
 vendor/lib64/libuniplugin.so
-vendor/lib/libvdis_interface.so
 vendor/lib64/libvdis_interface.so
-vendor/lib/libeis_core.so
 vendor/lib64/libeis_core.so
 vendor/lib64/libsensorlistener.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
@@ -75,9 +70,6 @@ vendor/etc/gnss/gps.issuetracker.cfg
 vendor/etc/gnss/hardware_factors.conf
 
 # Sensors
-vendor/lib/sensors.grip.so
-vendor/lib/sensors.inputvirtual.so
-vendor/lib/sensors.sensorhub.so
 vendor/lib64/sensors.grip.so
 vendor/lib64/sensors.inputvirtual.so
 vendor/lib64/sensors.sensorhub.so
