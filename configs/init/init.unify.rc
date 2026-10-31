@@ -1,0 +1,25 @@
+#
+# SPDX-FileCopyrightText: The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+on early-init
+    # Firmware
+    mount none /vendor/firmware/${ro.boot.em.model}/calliope_sram.bin /vendor/firmware/calliope_sram.bin bind
+    mount none /vendor/firmware/${ro.boot.em.model}/mfc_fw.bin /vendor/firmware/mfc_fw.bin bind
+    mount none /vendor/firmware/${ro.boot.em.model}/os.checked.bin /vendor/firmware/os.checked.bin bind
+    mount none /vendor/firmware/${ro.boot.em.model}/pablo_icpufw.bin /vendor/firmware/pablo_icpufw.bin bind
+    mount none /vendor/firmware/${ro.boot.em.model}/setfile_3l6.bin /vendor/firmware/setfile_3l6.bin bind
+    mount none /vendor/firmware/${ro.boot.em.model}/setfile_gc02m1.bin /vendor/firmware/setfile_gc02m1.bin bind
+    mount none /vendor/firmware/${ro.boot.em.model}/setfile_gc02m2.bin /vendor/firmware/setfile_gc02m2.bin bind
+    mount none /vendor/firmware/${ro.boot.em.model}/setfile_hi1336.bin /vendor/firmware/setfile_hi1336.bin bind
+    mount none /vendor/firmware/${ro.boot.em.model}/setfile_jn1.bin /vendor/firmware/setfile_jn1.bin bind
+    mount none /vendor/firmware/${ro.boot.em.model}/setfile_sc201.bin /vendor/firmware/setfile_sc201.bin bind
+    mount none /vendor/firmware/${ro.boot.em.model}/setfile_sc201_macro.bin /vendor/firmware/setfile_sc201_macro.bin bind
+
+    # TEEgris - Firmware
+    mount none /vendor/tee/${ro.boot.em.model} /vendor/tee bind
+
+on boot
+    # Audio
+    restart audioserver
