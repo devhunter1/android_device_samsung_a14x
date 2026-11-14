@@ -32,6 +32,9 @@ lib_fixups: lib_fixups_user_type = {
 } # fmt: skip
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/bin/hw/gpsd': blob_fixup()
+        .replace_needed('libcrypto.so', 'libcrypto-v33.so')
+        .replace_needed('libssl.so', 'libssl-v33.so'),
     'vendor/lib64/hw/camera.s5e8535.so': blob_fixup()
         .add_needed('libui_shim.so'),
     'vendor/lib64/libsensorlistener.so': blob_fixup()
